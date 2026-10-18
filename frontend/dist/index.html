@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href="/Intelligent-question-generation-project/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="智策题境是一套面向教师、教研与培训团队的智能出题、题库管理和组卷系统。" />
+    <meta property="og:title" content="智策题境" />
+    <meta property="og:description" content="把教材、讲义和文档快速转化为题库、练习与试卷。" />
+    <meta property="og:image" content="/Intelligent-question-generation-project/Logo.png" />
+    <title>智策题境</title>
+    <script>
+      // 在页面加载前同步设置主题，避免闪烁
+      (function() {
+        const saved = localStorage.getItem('theme');
+        const theme = saved === 'dark' ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="color-scheme"]').content = theme;
+      })();
+    </script>
+    <script type="module" crossorigin src="/Intelligent-question-generation-project/assets/index-1HZZ1zxj.js"></script>
+    <link rel="stylesheet" crossorigin href="/Intelligent-question-generation-project/assets/index-DzJoOOGJ.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
